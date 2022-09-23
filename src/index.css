@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.cocktail {
+  background: var(--mainWhite);
+  margin-bottom: 2rem;
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: var(--mainBorderRadius);
+}
+.cocktail:hover {
+  box-shadow: var(--darkShadow);
+}
+.cocktail img {
+  height: 20rem;
+  object-fit: cover;
+  border-top-left-radius: var(--mainBorderRadius);
+  border-top-right-radius: var(--mainBorderRadius);
+}
+.cocktail-footer {
+  padding: 1.5rem;
+}
+.cocktail-footer h3,
+.cocktail-footer h4,
+.cocktail-footer p {
+  margin-bottom: 0.3rem;
+}
+.cocktail-footer h3 {
+  font-size: 2rem;
+}
+.cocktail-footer p {
+  color: var(--darkGrey);
+  margin-bottom: 0.5rem;
+}
